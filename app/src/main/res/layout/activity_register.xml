@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:src="@drawable/imgs" />
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="97dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+         />
+
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        android:layout_marginStart="5dp"
+        android:text="For all your shopping needs"
+         />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+         />
+
+    <EditText
+        android:id="@+id/editTextEmail0"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+         />
+
+    <EditText
+        android:id="@+id/editTextPassword0"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+         />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/editTextGender"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/editTextDOB"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:inputType="date"
+       />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="26dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/textViewAlreadyRegistered"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="600dp"
+        android:text="Already Registered?"
+        />
+
+</RelativeLayout>
