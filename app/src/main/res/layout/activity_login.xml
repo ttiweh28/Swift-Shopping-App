@@ -19,6 +19,12 @@
         android:layout_marginRight="150dp"
         android:layout_marginBottom="17dp"
         android:text="Login"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
          />
 
     <ImageView
@@ -26,7 +32,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:src="@drawable/imgs" />
+        android:src="@drawable/imgs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
+        />
 
     <TextView
         android:id="@+id/textView3"
@@ -35,11 +47,16 @@
         android:text="For all your shopping needs"
         android:layout_marginStart="5dp"
         android:layout_marginTop="700dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
          />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="500dp"
+        android:layout_width="700dp"
         android:layout_height="50dp"
         android:layout_marginStart="142dp"
         android:layout_marginLeft="142dp"
@@ -50,7 +67,11 @@
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword"
-         />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675" />
 
     <TextView
         android:id="@+id/textViewNotRegistered"
@@ -63,11 +84,17 @@
         android:layout_marginRight="150dp"
         android:layout_marginBottom="139dp"
         android:text="Not Registered?"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
          />
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="500dp"
+        android:layout_width="700dp"
         android:layout_height="50dp"
         android:layout_marginStart="130dp"
         android:layout_marginLeft="130dp"
@@ -78,7 +105,14 @@
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textPersonName"
-         />
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
+
+        />
 
 
 </com.google.android.material.circularreveal.CircularRevealRelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupermarketHomeActivity">
+
+    <SearchView
+        android:id="@+id/searchView2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/AppCompatImageButtonAppliance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/AppCompatImageButton1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart"
+        app:layout_constraintBottom_toTopOf="@+id/AppCompatImageButtonAppliance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+    android:id="@+id/AppCompatImageButtonAppliance"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="100dp"
+    android:layout_marginRight="100dp"
+    android:layout_marginBottom="450dp"
+    android:src="@drawable/applian"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAisle1"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="HOME APPLIANCES"
+        app:layout_constraintBottom_toTopOf="@+id/AppCompatImageButtonFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppCompatImageButtonAppliance" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/AppCompatImageButtonFood"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="450dp"
+        android:src="@drawable/food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAisle2"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="2dp"
+        android:text="FOOD STUFF"
+        app:layout_constraintBottom_toTopOf="@+id/AppCompatImageButtonDetergent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppCompatImageButtonFood" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/AppCompatImageButtonDetergent"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="940dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="450dp"
+        android:src="@drawable/detergent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewAisle3"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="1dp"
+        android:text="DETERGENTS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppCompatImageButtonDetergent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

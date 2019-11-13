@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/AppCompatImageButtonLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/imgs"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewVisa"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="9dp"
+        android:text="VISA CARD PAYMENTS"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCreditCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppCompatImageButtonLogo" />
+
+    <EditText
+        android:id="@+id/editTextCreditCard"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Credit Card Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCVV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVisa" />
+
+    <EditText
+        android:id="@+id/editTextCVV"
+
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuyVisa"
+        app:layout_constraintEnd_toStartOf="@+id/editTextExpiryDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCreditCard" />
+
+    <EditText
+        android:id="@+id/editTextExpiryDate"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Expiry Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuyVisa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextCVV"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCreditCard" />
+
+    <Button
+        android:id="@+id/buttonBuyVisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="183dp"
+        android:text="BUY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExpiryDate" />
+
+    <TextView
+        android:id="@+id/textViewMobileMoney"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="8dp"
+        android:text="MOBILE MONEY PAYMENTS"
+        android:textSize="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhoneNumberPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuyVisa" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumberPay"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Mobile Money Phone Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuyMobileMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMobileMoney" />
+
+    <Button
+        android:id="@+id/buttonBuyMobileMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="54dp"
+        android:text="BUY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumberPay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

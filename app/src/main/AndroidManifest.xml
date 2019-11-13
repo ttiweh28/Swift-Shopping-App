@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".EndActivity"></activity>
+        <activity android:name=".SupermarketHomeActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".AisleActivity3" />
+        <activity android:name=".AisleActivity2" />
+        <activity android:name=".AisleActivity1" />
+        <activity android:name=".supermarkethome" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".MainActivity"
